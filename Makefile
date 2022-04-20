@@ -1,2 +1,5 @@
 default:
-	docker build -t justincormack/nsenter1 .
+	docker build -t nsenter1 .
+
+run:
+	docker run -it --rm --privileged --pid=host nsenter1
